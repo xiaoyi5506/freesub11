@@ -25,24 +25,12 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
-      "server": "connect3.nyxserver.ir",
-      "server_port": 8444,
-      "uuid": "0b39a009-2a2a-4035-ba87-cc82894f8e21",
-      "tls": {
-        "enabled": true,
-        "server_name": "connect3.nyxserver.ir",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
+      "server": "188.132.174.236",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "rSeYcig_XBy8q3k33NpK3A"
     },
     {
       "type": "selector",

@@ -18,15 +18,12 @@ proxies:
   servername: sync-bridge.org
   client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: connect3.nyxserver.ir
-  port: 8444
+  server: 188.132.174.236
+  port: 1080
   udp: true
-  type: vless
-  uuid: 0b39a009-2a2a-4035-ba87-cc82894f8e21
-  tls: true
-  servername: connect3.nyxserver.ir
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: rSeYcig_XBy8q3k33NpK3A
 proxy-groups:
 - name: PROXIES
   type: select
