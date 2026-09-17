@@ -4,12 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 - xiaohe",
-      "server": "r3mrcg00129437x.cybervena.com",
-      "server_port": 50099,
-      "method": "chacha20-ietf-poly1305",
-      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+      "server": "vpn-tw-002.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-tw-002.fastervpn.world\\u0026insecure=1\\u0026allowinsecure=1",
+        "insecure": true
+      }
     },
     {
       "type": "hysteria2",
@@ -19,7 +23,7 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https%3a%2f%2ft.me%2foneclickvpnkeys",
+        "server_name": "https%3a%2f%2ft.me%2fwangcai2",
         "insecure": true
       }
     },
@@ -35,7 +39,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
@@ -45,24 +49,25 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇹🇼 中国台湾 (Taiwan) 04 - xiaohe",
-      "server": "vpn-tw-002.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "server": "35.229.136.113",
+      "server_port": 35412,
+      "uuid": "5d3cbdb2-b82d-4078-82b8-5dd413cca82b",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "vpn-tw-002.fastervpn.world%5cu0026insecure%3d1%5cu0026allowinsecure%3d1",
-        "insecure": true
+        "server_name": "www.amd.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "eg6DfbLnWtz7PubkXRYvSuQx6QWIRxUsn4l7QEO3Cg4",
+          "short_id": "0630b874d595"
+        }
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 05 - xiaohe",
-      "server": "r3mrcg00129437x.cybervena.com",
-      "server_port": 50099,
-      "method": "chacha20-ietf-poly1305",
-      "password": "b1ae0fce-9340-4f2e-882d-fdb2218e2e2b"
     },
     {
       "type": "selector",
@@ -72,8 +77,7 @@
         "🇹🇼 中国台湾 (Taiwan) 01 - xiaohe",
         "🇹🇼 中国台湾 (Taiwan) 02 - xiaohe",
         "🇹🇼 中国台湾 (Taiwan) 03 - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 04 - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 05 - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 04 - xiaohe"
       ]
     },
     {
@@ -83,8 +87,7 @@
         "🇹🇼 中国台湾 (Taiwan) 01 - xiaohe",
         "🇹🇼 中国台湾 (Taiwan) 02 - xiaohe",
         "🇹🇼 中国台湾 (Taiwan) 03 - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 04 - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 05 - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
