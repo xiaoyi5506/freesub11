@@ -4,28 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇹 奥地利 (Austria) 01 - xiaohe
-  server: 212.183.88.136
+- name: 🇮🇶 IQ 01 - xiaohe
+  server: 104.21.16.123
   port: 443
   udp: true
   type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
+  password: Telegram_healer_config
+  sni: 7x7o3vtq5z6ymu3hv1fh-op9blt.hya6losm6lznoxhm6w3mk.workers.dev
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /assignment
+    path: /tr/qL8YIeH28wNcXfNTPgLCwOhNFEr?ed=2560
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇹 奥地利 (Austria) 01 - xiaohe
+  - 🇮🇶 IQ 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇹 奥地利 (Austria) 01 - xiaohe
+  - 🇮🇶 IQ 01 - xiaohe
 rules:
 - MATCH,PROXIES
