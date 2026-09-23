@@ -4,30 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
-  server: 179.255.191.40
-  port: 8443
+- name: 🌐 其他地区 (Other) 01 - xiaohe
+  server: 104.16.71.213
+  port: 443
   udp: true
-  type: vless
-  uuid: d544c858-b1ba-45b2-8868-8197daf2a6ee
-  tls: true
-  servername: switz.luxes.network
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
   skip-cert-verify: false
-  client-fingerprint: safari
   network: ws
   ws-opts:
-    path: /assets
+    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
+  - 🌐 其他地区 (Other) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
+  - 🌐 其他地区 (Other) 01 - xiaohe
 rules:
 - MATCH,PROXIES
