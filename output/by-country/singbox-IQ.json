@@ -5,27 +5,23 @@
   "outbounds": [
     {
       "type": "trojan",
-      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "104.18.37.127",
+      "tag": "🇮🇶 IQ 01 - xiaohe",
+      "server": "104.21.70.21",
       "server_port": 443,
-      "password": "humanity",
+      "password": "Telegram_healer_config",
       "tls": {
         "enabled": true,
-        "server_name": "wWw.Volumeroot.cOm.",
+        "server_name": "bjsa2ygfitzjtho8ucze29xf2m2q9c.g3fiajpf0erm9k3x6ww-yegzl2.workers.dev",
         "insecure": false,
         "alpn": [
           "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        ]
       },
       "transport": {
         "type": "ws",
-        "path": "/assignment",
+        "path": "/tr/J6IJuAAWkqyiEt8UkeRnVdLlkLIGukLr?ed=2560",
         "headers": {
-          "Host": "www.volumerOot.coM."
+          "Host": "bjsa2ygfitzjtho8ucze29xf2m2q9c.g3fiajpf0erm9k3x6ww-yegzl2.workers.dev"
         }
       }
     },
@@ -34,14 +30,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇮🇶 IQ 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇮🇶 IQ 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
