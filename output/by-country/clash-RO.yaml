@@ -5,14 +5,30 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
-  server: 77.74.123.107
+  server: 77.74.123.103
   port: 8443
   udp: true
   type: hysteria2
   password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   sni: grape-test-italy.dynuddns.net
-  skip-cert-verify: false
+  skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
+  server: 103.126.51.50
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  sni: ocober-romania-new.yyuyy.com
+  skip-cert-verify: true
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
+  server: 162.249.126.39
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  sni: hop-germany-september.dynuddns.com
+  skip-cert-verify: false
+- name: 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
   server: 162.249.125.133
   port: 443
   udp: true
@@ -22,28 +38,6 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
-  server: 103.126.51.50
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: ocober-romania-new.yyuyy.com
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
-  server: 85.90.196.11
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: fzo5i.ir46.90k.hh.ov0.kdns.fr
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /glasspanel/guest000_0_5de14443985f/
-    headers:
-      Host: fzo5i.ir46.90k.hh.ov0.kdns.fr
 - name: 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
   server: 193.163.203.253
   port: 443
