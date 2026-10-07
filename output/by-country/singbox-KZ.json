@@ -4,24 +4,23 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "104.21.57.25",
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe",
+      "server": "199.189.254.16",
       "server_port": 443,
-      "password": "humanity",
+      "uuid": "5b5e4cbf-2366-499a-8327-0cd9918c687d",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.volumeroot.com",
+        "server_name": "panel.surfweb.club",
         "insecure": false,
         "alpn": [
+          "h2",
           "http/1.1"
-        ]
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.volumeroot.com"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
         }
       }
     },
@@ -30,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
