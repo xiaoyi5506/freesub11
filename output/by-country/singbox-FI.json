@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-      "server": "185.103.110.68",
-      "server_port": 18283,
-      "method": "aes-128-gcm",
-      "password": "f9300a9bf39ae0347c3a3bfbc4dd7754"
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
+      "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
       "server": "87.251.17.11",
       "server_port": 9443,
       "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
@@ -22,6 +14,14 @@
         "server_name": "onecloudstream.com",
         "insecure": true
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
+      "server": "185.103.110.68",
+      "server_port": 18283,
+      "method": "aes-128-gcm",
+      "password": "f9300a9bf39ae0347c3a3bfbc4dd7754"
     },
     {
       "type": "vless",
