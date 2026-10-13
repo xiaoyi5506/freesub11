@@ -4,33 +4,42 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  server: v10.hdacd.com
-  port: 30807
-  udp: true
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
-  server: test.keoplentuio.xyz
-  port: 2053
+- name: 🇨🇦 加拿大 (Canada) 01 (家宽) - xiaohe
+  server: 104.18.0.1
+  port: 443
   udp: true
   type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  uuid: 3ccba794-1c6d-48a8-acf2-f5caf0e69d86
+  tls: true
+  servername: all.speedtest03.ccwu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: all.speedtest03.ccwu.cc
+- name: 🇸🇬 新加坡 (Singapore) 02 (家宽) - xiaohe
+  server: s3.huhiuh.space
+  port: 18642
+  udp: true
+  type: hysteria2
+  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
+  sni: s3.huhiuh.space
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
+  - 🇨🇦 加拿大 (Canada) 01 (家宽) - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 02 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
+  - 🇨🇦 加拿大 (Canada) 01 (家宽) - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 02 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
