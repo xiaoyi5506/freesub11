@@ -4,29 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇷 巴西 (Brazil) 01 - xiaohe
-  server: 35.199.90.53
+- name: 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
+  server: 77.110.105.122
   port: 443
   udp: true
   type: vless
-  uuid: 5e517b94-e207-47ee-be3c-3020a57594e8
+  uuid: 019fbe0f-2d9f-4b89-9f81-e1e36129892a
+  flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs
-    short-id: b62a4da6cd1c4dd6
-  servername: www.cloudflare.com
+  servername: co-pl.speedtec.ru
+  skip-cert-verify: false
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇷 巴西 (Brazil) 01 - xiaohe
+  - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 巴西 (Brazil) 01 - xiaohe
+  - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
 rules:
 - MATCH,PROXIES
