@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: 144.31.34.146
-  port: 2096
+- name: 🇮🇷 IR 01 - xiaohe
+  server: tun.centeriran.shop
+  port: 443
   udp: true
   type: vless
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  uuid: 041b2265-0d0a-4290-9439-25b6a0e15b6e
   tls: true
-  servername: fi1.merky.one
+  servername: 2sdfsxc.centeriran.shop
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /mky-ws-4f19c8a7
+    path: /
     headers:
-      Host: fi1.merky.one
+      Host: tun.centeriran.shop
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇫🇮 芬兰 (Finland) 01 - xiaohe
+  - 🇮🇷 IR 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇮 芬兰 (Finland) 01 - xiaohe
+  - 🇮🇷 IR 01 - xiaohe
 rules:
 - MATCH,PROXIES
