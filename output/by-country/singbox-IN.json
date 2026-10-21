@@ -49,7 +49,7 @@
         "server_name": "in1.vkusnews.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
