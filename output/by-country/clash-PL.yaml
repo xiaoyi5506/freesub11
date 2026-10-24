@@ -5,11 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
-  server: edge10.cyrionflare.com
-  port: 2052
+  server: 92.118.150.146
+  port: 443
   udp: true
-  type: vless
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  type: trojan
+  password: Trojan@82164024
+  sni: pl.tronsg.com
+  skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
   server: site.teslamotor.site
   port: 20001
