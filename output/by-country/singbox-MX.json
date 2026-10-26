@@ -4,14 +4,22 @@
   },
   "outbounds": [
     {
+      "type": "shadowsocks",
+      "tag": "🇲🇽 墨西哥 (Mexico) 01 - xiaohe",
+      "server": "64.177.90.30",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "BWyPPTusFKhGgzKh"
+    },
+    {
       "type": "vless",
-      "tag": "🇵🇭 菲律宾 (Philippines) 01 - xiaohe",
-      "server": "ph001.zestapp778.com",
-      "server_port": 15656,
+      "tag": "🇲🇽 墨西哥 (Mexico) 02 - xiaohe",
+      "server": "mx001.zestapp778.com",
+      "server_port": 19167,
       "uuid": "e9a8144e-5237-488a-afb1-9ca3d8d54c80",
       "tls": {
         "enabled": true,
-        "server_name": "ph001.zestapp778.com",
+        "server_name": "mx001.zestapp778.com",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -24,14 +32,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇭 菲律宾 (Philippines) 01 - xiaohe"
+        "🇲🇽 墨西哥 (Mexico) 01 - xiaohe",
+        "🇲🇽 墨西哥 (Mexico) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇭 菲律宾 (Philippines) 01 - xiaohe"
+        "🇲🇽 墨西哥 (Mexico) 01 - xiaohe",
+        "🇲🇽 墨西哥 (Mexico) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
