@@ -19,7 +19,7 @@ proxies:
   type: trojan
   password: Trojan@82164024
   sni: au.tronsg.com
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
   server: funagfrdfs.alixxplay.com
   port: 54528
