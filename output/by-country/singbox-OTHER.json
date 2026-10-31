@@ -4,22 +4,90 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "www.gptcloudai.com",
-      "server_port": 443,
-      "uuid": "e70a5b70-f63c-4450-af8b-94990cdf80c0",
-      "security": "auto",
+      "server": "n04.jinggai.online",
+      "server_port": 8443,
+      "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
       "tls": {
         "enabled": true,
-        "server_name": "www.gptcloudai.com",
+        "server_name": "n04.jinggai.online",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/nvl-n04-ws/e0577fe8fd7c8823",
+        "headers": {
+          "Host": "n04.jinggai.online"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 其他地区 (Other) 02 - xiaohe",
+      "server": "172.64.190.13",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.pleadcourt.org",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/truth",
+        "path": "/assignment",
         "headers": {
-          "Host": "www.gptcloudai.com"
+          "Host": "www.pleadcourt.org"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 其他地区 (Other) 03 - xiaohe",
+      "server": "172.64.190.13",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.pleadcourt.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "unsafe"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.pleadcourt.org"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 其他地区 (Other) 04 - xiaohe",
+      "server": "172.64.190.13",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.pleadcourt.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "unsafe"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.pleadcourt.org"
         }
       }
     },
@@ -28,14 +96,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe",
+        "🌐 其他地区 (Other) 02 - xiaohe",
+        "🌐 其他地区 (Other) 03 - xiaohe",
+        "🌐 其他地区 (Other) 04 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe",
+        "🌐 其他地区 (Other) 02 - xiaohe",
+        "🌐 其他地区 (Other) 03 - xiaohe",
+        "🌐 其他地区 (Other) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
