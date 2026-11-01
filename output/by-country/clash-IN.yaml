@@ -46,7 +46,7 @@ proxies:
   type: trojan
   password: 5t6i121em5lkmsmk
   sni: in002.zestapp778.com
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇮🇳 印度 (India) 05 - xiaohe
   server: 152.67.8.205
   port: 80
@@ -59,7 +59,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: in-152.67.8.205-0250
+      Host: in-152.67.8.205-0204
 proxy-groups:
 - name: PROXIES
   type: select
