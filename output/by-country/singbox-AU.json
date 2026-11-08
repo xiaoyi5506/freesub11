@@ -11,21 +11,17 @@
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "45.63.30.142",
-        "insecure": true
+        "server_name": "connectwithemployerstohireyouridealteam.com",
+        "insecure": false
       }
     },
     {
-      "type": "anytls",
+      "type": "vmess",
       "tag": "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
-      "server": "user02.godvpn.lol",
-      "server_port": 62405,
-      "password": "4bbfa33a-449a-4a50-8dfc-6d0de880f7bc",
-      "tls": {
-        "enabled": true,
-        "server_name": "user02.godvpn.lol",
-        "insecure": true
-      }
+      "server": "ww11.levikogjgfdd.ir",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto"
     },
     {
       "type": "selector",
