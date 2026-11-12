@@ -34,27 +34,6 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
-- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  server: 95.143.196.97
-  port: 443
-  udp: true
-  type: trojan
-  password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
-  sni: connect-se.mimowhat.online
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
-  server: 94.183.234.245
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5de0c218-0138-45d8-94d2-c2c3f37a1a6d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc
-    short-id: 7f1e29593aa94ad1
-  servername: www.bing.com
-  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -63,8 +42,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -73,7 +50,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
 rules:
 - MATCH,PROXIES
