@@ -5,24 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "172.67.139.189",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
+      "server": "191.217.238.38",
       "server_port": 443,
-      "uuid": "364D2D52-E61E-4E52-80EC-2BC6BDF15349",
+      "uuid": "097eae28-f0e7-4b18-bce2-16cf7d9deb05",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "fr-free.fastestrelay.com",
-        "insecure": false,
+        "server_name": "www.bmw.de",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/700gvl",
-        "headers": {
-          "Host": "fr-free.fastestrelay.com"
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "vq0Fi871QaDVmxY7F0XWByt9muX3-16E31XfHWZj9D8",
+          "short_id": "28138197d12e8e38"
         }
       }
     },
@@ -31,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

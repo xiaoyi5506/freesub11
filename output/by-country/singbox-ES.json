@@ -30,12 +30,12 @@
     {
       "type": "trojan",
       "tag": "🇪🇸 西班牙 (Spain) 04 - xiaohe",
-      "server": "66.163.118.251",
+      "server": "66.163.118.203",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "resources.discovergreatjobsandadvanceyourcareer.com",
+        "server_name": "blog.discovergreatjobsandadvanceyourcareer.com",
         "insecure": false
       }
     },
@@ -52,35 +52,26 @@
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇪🇸 西班牙 (Spain) 06 - xiaohe",
-      "server": "7aa271t.es1.h1clayd.click",
+      "server": "66.163.118.244",
       "server_port": 443,
-      "uuid": "4201786b-d99b-4147-a5f0-20d47acddb81",
-      "flow": "xtls-rprx-vision",
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "7aa271t.es1.h1clayd.click",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE",
-          "short_id": "42426c882c5fcd41"
-        }
+        "server_name": "api.discovergreatjobsandadvanceyourcareer.com",
+        "insecure": false
       }
     },
     {
       "type": "trojan",
       "tag": "🇪🇸 西班牙 (Spain) 07 - xiaohe",
-      "server": "66.163.118.166",
+      "server": "66.163.118.131",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "learn.discovergreatjobsandadvanceyourcareer.com",
+        "server_name": "www.discovergreatjobsandadvanceyourcareer.com",
         "insecure": false
       }
     },
